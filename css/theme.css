@@ -1,0 +1,84 @@
+/* Light Theme (Default) */
+:root {
+  --color-background: #ffffff;
+  --color-surface: #f9fafb;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4b5563;
+  --color-text-tertiary: #9ca3af;
+  --color-text-on-primary: #ffffff;
+  --color-border: #e5e7eb;
+  
+  --theme-toggle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --color-background: #1a1a1a;
+  --color-surface: #2d2d2d;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a3a3a3;
+  --color-text-tertiary: #737373;
+  --color-text-on-primary: #ffffff;
+  --color-border: #404040;
+  
+  --theme-toggle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5'%3E%3C/circle%3E%3Cline x1='12' y1='1' x2='12' y2='3'%3E%3C/line%3E%3Cline x1='12' y1='21' x2='12' y2='23'%3E%3C/line%3E%3Cline x1='4.22' y1='4.22' x2='5.64' y2='5.64'%3E%3C/line%3E%3Cline x1='18.36' y1='18.36' x2='19.78' y2='19.78'%3E%3C/line%3E%3Cline x1='1' y1='12' x2='3' y2='12'%3E%3C/line%3E%3Cline x1='21' y1='12' x2='23' y2='12'%3E%3C/line%3E%3Cline x1='4.22' y1='19.78' x2='5.64' y2='18.36'%3E%3C/line%3E%3Cline x1='18.36' y1='5.64' x2='19.78' y2='4.22'%3E%3C/line%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] .header {
+  background-color: rgba(31, 41, 55, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .header.scrolled {
+  background-color: rgba(31, 41, 55, 0.95);
+}
+
+[data-theme="dark"] .skill-bar {
+  background-color: var(--color-neutral-700);
+}
+
+[data-theme="dark"] .project-card {
+  background-color: var(--color-neutral-800);
+}
+
+[data-theme="dark"] .project-tag {
+  background-color: var(--color-neutral-700);
+  color: var(--color-neutral-300);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+  background-color: var(--color-neutral-800);
+  border-color: var(--color-neutral-700);
+  color: var(--color-text-primary);
+}
+
+[data-theme="dark"] .project-filter {
+  background-color: var(--color-neutral-700);
+  color: var(--color-neutral-300);
+}
+
+[data-theme="dark"] .project-filter:hover {
+  background-color: var(--color-neutral-600);
+}
+
+[data-theme="dark"] .contact-icon {
+  background-color: var(--color-primary-900);
+}
+
+[data-theme="dark"] .footer {
+  background-color: #111827;
+}
+
+[data-theme="dark"] .social-icon {
+  background-color: var(--color-neutral-800);
+}
+
+[data-theme="dark"] .theme-toggle button {
+  background-color: var(--color-neutral-700);
+  color: var(--color-neutral-300);
+}
+
+[data-theme="dark"] .theme-toggle-icon {
+  background-image: var(--theme-toggle-icon);
+}
